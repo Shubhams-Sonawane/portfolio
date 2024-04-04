@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4dd5f99b15.js" crossorigin="anonymous"></script>
+</head>
+<body>   
+<div id="header">
+    <div class="container ">
+        <nav>
+           <img src="./images/background.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</href>
+                <li><a href="#">Contact</a></li>
+        </nav>
+        <div class="header-text">
+           <h1>Hi, I'm Shubham Sonawane<span><h6>Frontend Devloper<br></h6></span></h1>  
+        </div> 
+
+        </div>
+          
+</div>
+
+
+<!-----------------------about------------------------>
+<div id="about">
+    <div class="container">
+       <div class="row">
+            <div class="about-col-1">
+                <img src="./images/boximg.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1> 
+                <p>I am dedicated to expanding my skills to create dynamic and visually appealing websites that leave a lasting impression.</p>
+            
+                <div class="tab-titles">
+                <br>
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"  onclick="opentab('education')">Education</p>
+                <p class="tab-links"  onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming</span><br>Core-Java,Mysql,Php</li>
+                    <li><span>Web-Development</span><br>Html,Css,Javascript</li>
+                 </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>2019-2022</span><br>Bsc(IT)</li>
+                    <li><span>2022-2024</span><br>MCA</li>
+                </ul>
+                </div>
+                <div class="tab-contents active-tab" id="hobbies">
+                    <ul>
+                        <li><span>Sports</span><br>Cricket</li>
+                        <li><span>Other</span><br>Reading books,traveling</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+           
+       </div> 
+       </div>
+       <!--------------Services---------------->
+       <div id="Services>
+       <div class = "container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                <h2>Web Development</h2>
+                <p>ksdufg uahsuh shsh</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-code"></i>
+                <h2>Programming</h2>
+                <p>ksdufg uahsuh shsh</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-file"></i>
+                <h2>App Development</h2>
+                <p>ksdufg uahsuh shsh</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!------------------------Portfolio------------------>
+    <div id="Portfolio">
+        <h1 class="sub-title">My Work</h1> 
+
+        <div class="container">
+            
+            <!-- <div class="work-list"> -->
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media Website</h3>
+                    <p>ldhf lskdfkldfhsi kjsdbjsfj jsdbfjsdfb kjdbf</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+            
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Audio Music</h3>
+                        <p>skhdbfj kjsdbfkjsdb kjsdfkjbkj</p>
+                        <a href="#"><i class="fa-solid fa-music"></i></a>
+                    </div>
+                    
+                </div>
+               
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Smart Devices</h3>
+                            <p>kjksd kjbjb kjdbkjd kb kjasb</p>
+                            <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                        </div>
+                    </div>
+        </div>
+        <!-- </div> -->
+        <a href="#" class="btn">See more</a>
+    </div>
+    <!-----------------contact----------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p>shubhamsonawane0953@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7721819674</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                   <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                   
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>For Educationl Purpose</p>
+    </div>
+</div>
+    
+
+<!--------------J-Script---------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+</body>
+</html>
